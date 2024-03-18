@@ -18,5 +18,6 @@
   --transition-border: border 0.3s;
   --transition-transform: transform 0.3s;
   --fade: fade-bottom 0.3s cubic-bezier(0.40, 0.575, 0.0565, 1) both;
-  --shadow: 0 10px 20px 0 rgb(0 0 0 / 20%) ;
+  --shadow: 0 10px 20px 0 rgb(0 0 0 / 20%);
+  --grid-col: 130px;
 }/*# sourceMappingURL=vars.css.map */

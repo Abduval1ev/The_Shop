@@ -81,6 +81,62 @@
   padding: 50px 0;
   display: block;
 }
+.wrap .header_center .menu .sub_mega .mega_content .dotgrid .wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(var(--grid-col), 100%), 1fr));
+  gap: var(--gutter, 30px);
+}
+.wrap .header_center .menu .sub_mega .mega_content .dotgrid .wrapper .item .dot_image {
+  overflow: hidden;
+  position: relative;
+  margin: 0 0 15px;
+}
+.wrap .header_center .menu .sub_mega .mega_content .dotgrid .wrapper .item .dot_image:hover .actions {
+  opacity: 1;
+  transform: translateZ(0);
+}
+.wrap .header_center .menu .sub_mega .mega_content .dotgrid .wrapper .item .dot_image:hover .product_permalink_image__hover {
+  opacity: 1;
+  transform: scale3d(1.1, 1.1, 1.1) translateZ(0);
+}
+.wrap .header_center .menu .sub_mega .mega_content .dotgrid .wrapper .item .dot_image .product_permalink_image__hover {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 0.75s ease, transform 1.1s cubic-bezier(0.15, 0.75, 0.5, 1) 0s;
+  backface-visibility: hidden;
+  transform: translate(0);
+}
+.wrap .header_center .menu .sub_mega .mega_content .dotgrid .wrapper .item .dot_image .product_permalink_image .product_permalink {
+  z-index: 1;
+}
+.wrap .header_center .menu .sub_mega .mega_content .dotgrid .actions {
+  position: absolute;
+  top: auto;
+  bottom: 10px;
+  transform: translate3d(0, 100%, 0);
+  opacity: 0;
+}
+.wrap .header_center .menu .sub_mega .mega_content .dotgrid .actions .actions_ul {
+  text-align: center;
+}
+.wrap .header_center .menu .sub_mega .mega_content .dotgrid .actions .actions_ul .actions_list a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  font-size: 20px;
+  background-color: var(--white-color);
+  border-radius: 50%;
+  transition: cubic-bezier(0, 0, 0, 2, 1) all 0.3s;
+  z-index: 2;
+  transition: var(--transition-background), var(--transition-color);
+}
+.wrap .header_center .menu .sub_mega .mega_content .dotgrid .actions .actions_ul .actions_list a:hover {
+  background-color: var(--dark-color);
+  color: var(--white-color);
+}
 .wrap .header_center .menu .ul_lists :where(.sub_menu, .sub_mega) {
   position: absolute;
   top: auto;

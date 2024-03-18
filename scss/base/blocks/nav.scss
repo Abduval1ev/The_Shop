@@ -8,7 +8,19 @@
     .header_right {
         flex-grow: 1;
 
+        & :where(.header_left, .header_right) li {
+            display: flex;
+            align-items: center;
+            height: 80px;
+        }
+
         .list_inline {
+            .header_left_ul_lists {
+                @include md {
+                    display: none;
+                }
+            }
+
             .nav_link {
                 position: relative;
                 font-size: var(--font-size-24);
@@ -44,7 +56,6 @@
             }
         }
 
-
         .menu_bar {
             display: none;
 
@@ -61,12 +72,93 @@
             grid-template-columns: 1fr 1fr;
             gap: 180px;
 
-            .ul_lists {
-                .menu_link {
-                    font-size: var(--font-size-14);
-                    font-weight: var(--font-weight-600);
-                    text-transform: uppercase;
+            .hidden {
+                display: none;
+            }
+
+            @include md {
+                display: none;
+            }
+
+            .sub_mega {
+                left: 0;
+                right: 0;
+                padding: 50px 0;
+                display: block;
+            }
+
+            .ul_lists :where(.sub_menu, .sub_mega) {
+
+                position: absolute;
+                top: auto;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1px;
+                line-height: 1;
+                background-color: var(--white-color);
+                box-shadow: var(--shadow);
+                z-index: 1000;
+                padding: 10px 0;
+                animation: var(--fade);
+
+                @keyframes fade-bottom {
+                    0% {
+                        transform: translateY(10px);
+                        opacity: 0;
+                    }
+
+                    100% {
+                        transform: translateY(0);
+                        opacity: 1;
+                    }
                 }
+
+                .sub_menu_list {
+                    padding: 5px 30px;
+
+                    .sub_menu_list :hover {
+                        .sub_menu {
+                            display: block;
+                        }
+                    }
+
+                    .sub_menu_link {
+                        position: relative;
+                        font-size: var(--font-size-16);
+                        padding: 6px 0;
+                        display: inline-block;
+                        transform: var(--transition-color);
+
+                        &:hover {
+                            color: var(--dark-color);
+                        }
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            width: 0;
+                            height: 0;
+                            background-color: var(--dark-color);
+                            left: -20px;
+                            top: 50%;
+                            border-radius: 50%;
+                            transform: translateY(-50%);
+                            transition: width 0.2s, height 0.2s;
+                        }
+
+                        &:hover::before {
+                            width: 8px;
+                            height: 8px;
+                        }
+                    }
+                }
+            }
+
+            .menu_link {
+                font-size: var(--font-size-14);
+                font-weight: var(--font-weight-600);
+                text-transform: uppercase;
             }
         }
 
@@ -74,6 +166,7 @@
             .ul_lists {
                 display: flex;
                 align-items: center;
+                gap: 5px;
             }
         }
 
@@ -89,7 +182,7 @@
 
             .logo_link {
                 font-family: var(--second-font);
-                font-size: var(--font-size-30px);
+                font-size: var(--font-size-30);
                 font-weight: var(--font-weight-600);
                 line-height: inherit;
                 pointer-events: auto;

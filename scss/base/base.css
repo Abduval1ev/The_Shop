@@ -16,5 +16,5 @@ body .container {
 }
 html .hidden,
 body .hidden {
-  display: none;
+  display: none !important;
 }/*# sourceMappingURL=base.css.map */

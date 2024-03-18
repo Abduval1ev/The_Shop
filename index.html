@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="./scss/main.css">
     <script src="./js/main.js" defer></script>
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
     <title>Home Page</title>
 </head>
 
-<body>
+<body class="">
     <div id="page" class="page_home">
         <header class="header">
             <div class="inner_header">
@@ -21,7 +21,7 @@
                                 <a href="#!" class="menu_trigger"><i class="ri-menu-line"></i></a>
                             </div>
                             <div class="list_inline">
-                                <ul>
+                                <ul class="header_left_ul_lists">
                                     <li>
                                         <a href="" class="nav_link">
                                             <i class="ru-user-line">
@@ -41,13 +41,114 @@
                         <div class="header_center">
                             <nav class="menu">
                                 <ul class="ul_lists">
-                                    <li><a href="#!" class="menu_link">Home</a></li>
-                                    <li><a href="#!" class="menu_link">Products</a></li>
-                                    <li><a href="#!" class="menu_link">Desc</a></li>
+                                    <li>
+                                        <a href="#!" class="menu_link">
+                                            <span>Home</span>
+                                        </a>
+                                    </li>
+                                    <li data-tab-mega class="sub_mega_list">
+                                        <a href="#!" class="menu_link">
+                                            <span>Products</span>
+                                            <i class="ri-arrow-down-s-line"></i>
+                                        </a>
+                                        <ul class="sub_mega">
+                                            <li>
+                                                <div class="container">
+                                                    <div class="wrapper">
+                                                        <div class="mega_content">
+                                                            <div class="dotgrid">
+                                                                <div class="wrapper">
+                                                                    <div class="item">
+                                                                        <div class="dot_image">
+                                                                            <a class="product_permalink"></a>
+                                                                            <div class="product_permalink_image">
+                                                                                <img src="./images/product_01.jpg"
+                                                                                    alt="Image" class="image">
+                                                                            </div>
+                                                                            <div class="actions">
+                                                                                <ul class="actions_ul">
+                                                                                    <li class="actions_list">
+                                                                                        <a href="#!">
+                                                                                            <i class="ri-star-line">
+                                                                                            </i>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li class="actions_list">
+                                                                                        <a href="#!">
+                                                                                            <i class="ri-star-line">
+                                                                                            </i>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                    <li class="actions_list">
+                                                                                        <a href="#!">
+                                                                                            <i class="ri-star-line">
+                                                                                            </i>
+                                                                                        </a>
+                                                                                    </li>
+                                                                                </ul>
+                                                                            </div>
+                                                                            <div class="label"><span>-25%</span></div>
+                                                                        </div>
+                                                                        <div class="dot_info">
+                                                                            <h2 class="dot_title">
+                                                                                <a href="#!">The Sweater
+                                                                                    in tosca</a>
+                                                                            </h2>
+                                                                            <div class="product_price">
+                                                                                <span class="befor">$62.00</span>
+                                                                                <span class="current">$45.00</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="links">2</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="menu_link">
+                                            <span>Desc</span>
+                                        </a>
+                                    </li>
                                 </ul>
                                 <ul class="ul_lists">
-                                    <li><a href="#!" class="menu_link">Specials</a></li>
-                                    <li><a href="#!" class="menu_link">Sale</a></li>
+                                    <li data-tab-menu>
+                                        <a href="#!" class="menu_link">
+                                            <span>Specials</span>
+                                            <i class="ri-arrow-down-s-line"></i>
+                                        </a>
+                                        <ul class="sub_menu hidden">
+                                            <li class="sub_menu_list">
+                                                <a href="" class="sub_menu_link">
+                                                    Dolce & Gabbana
+                                                </a>
+                                            </li>
+                                            <li class="sub_menu_list">
+                                                <a href="" class="sub_menu_link">
+                                                    Louis Vuitton
+                                                </a>
+                                            </li>
+                                            <li class="sub_menu_list">
+                                                <a href="" class="sub_menu_link">
+                                                    Versace
+                                                </a>
+                                            </li>
+                                            <li class="sub_menu_list">
+                                                <a href="" class="sub_menu_link">
+                                                    Dior
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="#!" class="menu_link">
+                                            <span>Sale</span>
+                                        </a>
+                                    </li>
                                 </ul>
                             </nav>
                             <div class="branding"><a href="#!" class="logo_link">TheShop</a></div>

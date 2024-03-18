@@ -1,0 +1,20 @@
+html,
+body {
+    font-family: var(--primay-font);
+    font-size: var(--font-size-16);
+    font-weight: var(--font-weight-400);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    line-height: 1.8;
+    background-color: var(--withe-color);
+
+    .container {
+        max-width: var(--mx-width, 1200px);
+        padding: 0 var(--gutter, 15px);
+        margin: 0 auto;
+    }
+
+    .hidden {
+        display: none;
+    }
+}

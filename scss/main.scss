@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Prata&display=swap');
+
+// Base 
+
+@import './base/base.css';
+@import './base/reset.css';
+@import './base/vars.css';
+@import './base/blocks/breakpoints.scss';
+
+// Blocks
+@import './base/blocks/header.css';
+@import './base/blocks/nav.css';

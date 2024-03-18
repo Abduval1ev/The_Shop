@@ -1,0 +1,21 @@
+:root {
+  --primay-color: #2bcbba;
+  --light-color: #d1d8e0;
+  --grey-color: #ff4757;
+  --flashwhite-color: #f1f2f6;
+  --white-color: #ffff;
+  --dark-color: #212121;
+  --primay-font: "Montserrat", sans-serif;
+  --second-font: "Prata", serif;
+  --font-size-14: 14px;
+  --font-size-16: 16px;
+  --font-size-24: 24px;
+  --font-size-30: 30px;
+  --font-weight-400: 400;
+  --font-weight-600: 600;
+  --transition-color: color 0.3s;
+  --transition-background: background-color 0.3s;
+  --transition-border: border 0.3s;
+  --transition-transform: transform 0.3s;
+  --shadow: 0 10px 20px 0 rgb(0 0 0 / 20%) ;
+}/*# sourceMappingURL=vars.css.map */

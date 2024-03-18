@@ -1,0 +1,83 @@
+.wrap {
+  display: flex;
+  align-items: center;
+}
+.wrap .header_left,
+.wrap .header_right {
+  flex-grow: 1;
+}
+.wrap .header_left .list_inline .nav_link,
+.wrap .header_right .list_inline .nav_link {
+  position: relative;
+  font-size: var(--font-size-24);
+  padding: 0 10px;
+  line-height: 1;
+  display: flex;
+  transition: var(--transition-color);
+}
+.wrap .header_left .list_inline .nav_link .item_floating,
+.wrap .header_right .list_inline .nav_link .item_floating {
+  position: absolute;
+  font-size: 10px;
+  font-weight: var(--font-weight-600);
+  top: -8px;
+  right: 0;
+  background-color: var(--primay-color);
+  color: var(--white-color);
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.wrap .header_left .list_inline .nav_link:hover,
+.wrap .header_right .list_inline .nav_link:hover {
+  color: var(--light-color);
+}
+.wrap .header_left .list_inline .header_right_ul_lists,
+.wrap .header_right .list_inline .header_right_ul_lists {
+  justify-content: flex-end;
+}
+.wrap .header_left .menu_bar,
+.wrap .header_right .menu_bar {
+  display: none;
+}
+@media (max-width: 680px) {
+  .wrap .header_left .menu_bar,
+  .wrap .header_right .menu_bar {
+    display: block;
+  }
+}
+.wrap .header_center .menu {
+  max-width: 720px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 180px;
+}
+.wrap .header_center .menu .ul_lists .menu_link {
+  font-size: var(--font-size-14);
+  font-weight: var(--font-weight-600);
+  text-transform: uppercase;
+}
+.wrap .header_center .menu .ul_lists {
+  display: flex;
+  align-items: center;
+}
+.wrap .header_center .branding {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+.wrap .header_center .branding .logo_link {
+  font-family: var(--second-font);
+  font-size: var(--font-size-30px);
+  font-weight: var(--font-weight-600);
+  line-height: inherit;
+  pointer-events: auto;
+}/*# sourceMappingURL=nav.css.map */

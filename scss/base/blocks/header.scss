@@ -1,0 +1,11 @@
+header {
+    .inner_header {
+        line-height: 80px;
+
+        & :where(.wrap, .menu, ul) {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+    }
+}

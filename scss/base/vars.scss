@@ -14,8 +14,8 @@
     --second-font: 'Prata', serif;
     --font-size-14: 14px;
     --font-size-16: 16px;
-    --font-size-24: 24px;
-    --font-size-30: 30px;
+    --font-size-24: clamp(10px, -2rem + 5.47vw, 24px);
+    --font-size-30: clamp(16px, 0.462rem + 2.21vw, 30px);
     --font-weight-400: 400;
     --font-weight-600: 600;
 
@@ -25,6 +25,7 @@
     --transition-background: background-color 0.3s;
     --transition-border: border 0.3s;
     --transition-transform: transform 0.3s;
+    --fade: fade-bottom 0.3s cubic-bezier(0.40, 0.575, 0.0565, 1) both;
 
     // Shadow
 

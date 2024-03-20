@@ -128,6 +128,64 @@
                                             z-index: 1;
                                         }
                                     }
+
+                                    .label {
+                                        position: absolute;
+                                        top: auto;
+                                        left: 0;
+                                        right: 0;
+                                        bottom: 10px;
+                                        display: flex;
+                                        justify-content: center;
+                                        text-align: center;
+
+                                        span {
+                                            display: flex;
+                                            justify-content: center;
+                                            align-items: center;
+                                            width: 42px;
+                                            height: 42px;
+                                            font-size: 20px;
+                                            background-color: var(--white-color);
+                                            border-radius: 50%;
+                                            transition: cubic-bezier(0, 0, 0, 2, 1) all 0.3s;
+                                            z-index: 2;
+                                            transition: var(--transition-background), var(--transition-color);
+
+                                            & {
+                                                font-size: 12px;
+                                                font-weight: var(--font-weight-600);
+                                                color: var(--white-color);
+                                                background-color: var(--primay-color);
+                                            }
+                                        }
+                                    }
+                                }
+
+                                .dot_info {
+                                    text-align: center;
+
+                                    .dot_title {
+                                        font-family: var(--primay-font);
+                                        font-size: var(--font-size-14);
+                                        font-weight: var(--font-weight-600);
+                                        line-height: 38px;
+
+                                        a {
+                                            transition: var(--transition-color);
+
+                                            &:hover {
+                                                color: var(--light-color);
+                                            }
+                                        }
+                                    }
+
+                                    .product_price {
+                                        .befor {
+                                            text-decoration: line-through;
+                                            color: var(--light-color);
+                                        }
+                                    }
                                 }
                             }
                         }
@@ -135,11 +193,17 @@
                         .actions {
                             position: absolute;
                             top: auto;
+                            left: 0;
+                            right: 0;
+
                             bottom: 10px;
                             transform: translate3d(0, 100%, 0);
                             opacity: 0;
+                            transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
 
                             .actions_ul {
+                                display: flex;
+                                justify-content: center;
                                 text-align: center;
 
                                 .actions_list {
@@ -153,7 +217,7 @@
                                         background-color: var(--white-color);
                                         border-radius: 50%;
                                         transition: cubic-bezier(0, 0, 0, 2, 1) all 0.3s;
-                                        z-index: 2;
+                                        z-index: 100;
                                         transition: var(--transition-background), var(--transition-color);
 
                                         &:hover {
@@ -225,7 +289,7 @@
                             top: 50%;
                             border-radius: 50%;
                             transform: translateY(-50%);
-                            transition: width 0.2s, height 0.2s;
+                            transition: width 0.2s, height 0.2s; //!
                         }
 
                         &:hover::before {

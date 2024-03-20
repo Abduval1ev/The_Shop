@@ -40,8 +40,9 @@ h4,
 h5,
 h6,
 p {
-  font-size: inherit;
+  font-size: var(--font-size-24);
   font-weight: inherit;
+  font-family: var(--second-font);
 }
 
 ul,
